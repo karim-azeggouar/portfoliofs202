@@ -701,7 +701,7 @@
 
                     <div>
                         <strong>
-                            Figma_Partie 3
+                            Figma_Partie3
                         </strong>
 
                         <small>
