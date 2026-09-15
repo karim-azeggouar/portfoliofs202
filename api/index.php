@@ -597,11 +597,142 @@
                 </a>
             </div>
 
+
+
+
+
+            
+
         </div>
 
     </div>
 
 </section>
+
+
+
+
+
+
+
+
+<!-- ================= FIGMA ================= -->
+
+<section id="cours">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>UX / UI FIGMA</h2>
+
+            <p>
+                Formation multimédia  UX / UI design
+                « Préparer un projet Web ».
+            </p>
+
+        </div>
+
+
+        <div class="resource-list">
+
+            <div class="resource">
+
+                <div class="resource-info">
+
+                    <div class="pdf-icon">
+                        Vidéos
+                    </div>
+
+                    <div>
+                        <strong>
+                            Figma_Partie 1_
+                        </strong>
+
+                        <small>
+                            Outils de base. 
+                        </small>
+                    </div>
+
+                </div>
+
+                <a href="/docs/figma/Figma_Partie1_Outils-de-base.rar"
+                   class="btn btn-primary"
+                   download>
+                    Télécharger
+                </a>
+
+            </div>
+ <div class="resource">
+
+                <div class="resource-info">
+
+                    <div class="pdf-icon">
+                        Vidéos
+                    </div>
+
+                    <div>
+                        <strong>
+                            Figma_Partie 2_
+                        </strong>
+
+                        <small>
+                            Outils avancés.rar 
+                        </small>
+                    </div>
+
+                </div>
+
+                <a href="/docs/figma/Figma_Partie 2_Outils avancés.rar"
+                   class="btn btn-primary"
+                   download>
+                    Télécharger
+                </a>
+
+            </div>
+
+             <div class="resource">
+
+                <div class="resource-info">
+
+                    <div class="pdf-icon">
+                        Vidéos
+                    </div>
+
+                    <div>
+                        <strong>
+                            Figma_Partie 3
+                        </strong>
+
+                        <small>
+                            _Prototypage et animations_ 
+                        </small>
+                    </div>
+
+                </div>
+
+                <a href="/docs/figma/Figma_Partie 3_Prototypage et animations.rar"
+                   class="btn btn-primary"
+                   download>
+                    Télécharger
+                </a>
+
+            </div>
+
+ 
+
+
+
+
+
+            
+
+        </div>
+
+    </div>
+
+</section>
+
 
 
 <!-- ================= TP ================= -->
