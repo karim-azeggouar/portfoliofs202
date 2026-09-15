@@ -509,7 +509,7 @@
             <h2>📚 Cours</h2>
 
             <p>
-                Supports pédagogiques du module
+                Supports pédagogiques du Langage de modélisation UML
                 « Préparer un projet Web ».
             </p>
 
@@ -523,16 +523,16 @@
                 <div class="resource-info">
 
                     <div class="pdf-icon">
-                        PDF
+                        PPT
                     </div>
 
                     <div>
                         <strong>
-                            Cours — Préparer un projet Web
+                            Cours — UML
                         </strong>
 
                         <small>
-                            Support principal du module
+                            Support principal 
                         </small>
                     </div>
 
@@ -552,12 +552,12 @@
                 <div class="resource-info">
 
                     <div class="pdf-icon">
-                        PDF
+                        PNG
                     </div>
 
                     <div>
                         <strong>
-                            UML — Introduction
+                            UML — Résumé
                         </strong>
 
                         <small>
@@ -567,7 +567,7 @@
 
                 </div>
 
-                <a href="pdf/cours-uml.pdf"
+                <a href="/images/résumeuml.png"
                    class="btn btn-primary"
                    download>
                     Télécharger
