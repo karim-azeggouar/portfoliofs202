@@ -435,7 +435,7 @@
                         pour préparer et analyser un projet Web.
                     </p>
 
-                    <a href="pdf/cours-preparer-projet-web.pdf"
+                    <a href="/docs/UML.pptx"
                        class="btn btn-primary"
                        download>
                         Télécharger le cours
@@ -538,7 +538,7 @@
 
                 </div>
 
-                <a href="pdf/cours-preparer-projet-web.pdf"
+                <a href="/docs/UML.pptx"
                    class="btn btn-primary"
                    download>
                     Télécharger
@@ -590,7 +590,7 @@
 
         <div class="section-title">
 
-            <h2>🛠️ Travaux pratiques</h2>
+            <h2> Travaux pratiques</h2>
 
             <p>
                 Réalisez les TP dans l'ordre proposé.
@@ -601,33 +601,8 @@
 
         <div class="resource-list">
 
-            <div class="resource">
-
-                <div class="resource-info">
-
-                    <div class="pdf-icon">
-                        TP
-                    </div>
-
-                    <div>
-                        <strong>
-                            TP 01 — Analyse d'un projet Web
-                        </strong>
-
-                        <small>
-                            Identification des besoins et fonctionnalités
-                        </small>
-                    </div>
-
-                </div>
-
-                <a href="pdf/tp-01-analyse.pdf"
-                   class="btn btn-primary"
-                   download>
-                    Énoncé PDF
-                </a>
-
-            </div>
+            
+            
 
 
             <div class="resource">
@@ -640,7 +615,7 @@
 
                     <div>
                         <strong>
-                            TP 02 — Modélisation UML
+                            Atelier (Application de gestion d’une société immobilière )  — Modélisation UML
                         </strong>
 
                         <small>
@@ -650,7 +625,7 @@
 
                 </div>
 
-                <a href="pdf/tp-02-uml.pdf"
+                <a href="/docs/UML_gestion_immobilier.pdf"
                    class="btn btn-primary"
                    download>
                     Énoncé PDF
@@ -659,33 +634,7 @@
             </div>
 
 
-            <div class="resource">
-
-                <div class="resource-info">
-
-                    <div class="pdf-icon">
-                        TP
-                    </div>
-
-                    <div>
-                        <strong>
-                            TP 03 — Diagrammes UML
-                        </strong>
-
-                        <small>
-                            Séquence, activité et état-transition
-                        </small>
-                    </div>
-
-                </div>
-
-                <a href="pdf/tp-03-diagrammes-uml.pdf"
-                   class="btn btn-primary"
-                   download>
-                    Énoncé PDF
-                </a>
-
-            </div>
+    
 
         </div>
 
@@ -703,7 +652,7 @@
         <div class="project">
 
             <h3>
-                🚀 Mini-projet — Application Web
+                 Mini-projet — Application Web
             </h3>
 
             <p>
@@ -712,7 +661,7 @@
                 conception, modélisation UML et préparation du projet.
             </p>
 
-            <a href="pdf/mini-projet.pdf"
+            <a href="/docs/quickannonces.pdf"
                class="btn btn-primary"
                download>
                 Télécharger l'énoncé PDF
