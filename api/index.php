@@ -1,170 +1,496 @@
-<?php
-// index.php
-?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio | Développeur Full Stack</title>
-
-    <meta name="description"
-          content="Portfolio de développeur Full Stack : projets, compétences et parcours professionnel.">
-
-    <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
-    <!-- Bootstrap Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    >
+    <title>Formation FullStack — 2ème année</title>
 
     <style>
-        html {
-            scroll-behavior: smooth;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fb;
+            color: #1e293b;
         }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* ================= HERO ================= */
 
         .hero {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            padding: 80px 7%;
         }
 
-        .hero img {
-            width: 280px;
-            height: 280px;
-            object-fit: cover;
-            border-radius: 50%;
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,.12);
+            border: 1px solid rgba(255,255,255,.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #dbeafe;
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 750px;
+        }
+
+        /* ================= CONTAINER ================= */
+
+        .container {
+            width: 86%;
+            max-width: 1200px;
+            margin: auto;
         }
 
         section {
-            padding: 80px 0;
+            padding: 60px 0;
         }
 
-        .project-card {
-            transition: transform 0.2s ease;
+        .section-title {
+            margin-bottom: 30px;
         }
 
-        .project-card:hover {
-            transform: translateY(-5px);
+        .section-title h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
         }
+
+        .section-title p {
+            color: #64748b;
+        }
+
+        /* ================= MODULE ================= */
+
+        .module {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(15,23,42,.07);
+            border: 1px solid #e2e8f0;
+        }
+
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .module-number {
+            width: 55px;
+            height: 55px;
+            border-radius: 14px;
+            background: #dbeafe;
+            color: #1d4ed8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .module-title {
+            flex: 1;
+        }
+
+        .module-title h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .module-title p {
+            color: #64748b;
+        }
+
+        /* ================= CARDS ================= */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 24px;
+            transition: .2s;
+            background: #fff;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(15,23,42,.09);
+        }
+
+        .card-icon {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .card h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        /* ================= BUTTON ================= */
+
+        .btn {
+            display: inline-block;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: .2s;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-outline {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+        }
+
+        .btn-outline:hover {
+            background: #f1f5f9;
+        }
+
+        /* ================= LIST ================= */
+
+        .resource-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .resource {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 18px;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            background: white;
+        }
+
+        .resource-info {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .pdf-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: #fee2e2;
+            color: #dc2626;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .resource strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .resource small {
+            color: #64748b;
+        }
+
+        /* ================= PROJECT ================= */
+
+        .project {
+            background: #0f172a;
+            color: white;
+            border-radius: 18px;
+            padding: 35px;
+        }
+
+        .project h3 {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            color: #cbd5e1;
+            line-height: 1.7;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        /* ================= FOOTER ================= */
 
         footer {
-            padding: 30px 0;
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width: 850px) {
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .module-header {
+                align-items: flex-start;
+            }
+
+            .resource {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
         }
     </style>
 </head>
 
+
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ================= HEADER ================= -->
 
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-    <div class="container">
+<header>
 
-        <a class="navbar-brand fw-bold" href="#">
-            Mon Portfolio
-        </a>
-
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#accueil">Accueil</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#apropos">À propos</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#competences">Compétences</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#projets">Projets</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-        </div>
+    <div class="logo">
+        Full<span>Stack</span> Academy
     </div>
-</nav>
+
+    <nav>
+        <a href="#modules">Modules</a>
+        <a href="#cours">Cours</a>
+        <a href="#tp">TP</a>
+        <a href="#projets">Mini-projets</a>
+    </nav>
+
+</header>
 
 
-<!-- ================= ACCUEIL ================= -->
+<!-- ================= HERO ================= -->
 
-<section id="accueil" class="hero">
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            Formation Développement Web FullStack
+        </div>
+
+        <h1>
+            2ème année <span>FullStack</span>
+        </h1>
+
+        <p>
+            Espace pédagogique destiné aux stagiaires.
+            Retrouvez ici les cours, travaux pratiques,
+            exercices, mini-projets et énoncés PDF
+            nécessaires à votre progression.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MODULES ================= -->
+
+<section id="modules">
 
     <div class="container">
 
-        <div class="row align-items-center">
+        <div class="section-title">
+            <h2>Parcours de formation</h2>
+            <p>Les modules et ressources disponibles pour la formation.</p>
+        </div>
 
-            <div class="col-md-7">
 
-                <p class="text-primary fw-bold">
-                    DÉVELOPPEUR FULL STACK
-                </p>
+        <!-- MODULE 01 -->
 
-                <h1 class="display-4 fw-bold">
-                    Bonjour, je suis
-                    <span class="text-primary">
-                       FS202
-                    </span>
-                </h1>
+        <div class="module">
 
-                <p class="lead mt-3">
-                    Je conçois et développe des applications web modernes,
-                    performantes et adaptées aux besoins des utilisateurs.
-                </p>
+            <div class="module-header">
 
-                <div class="mt-4">
+                <div class="module-number">
+                    M01
+                </div>
 
-                    <a href="#projets" class="btn btn-primary btn-lg me-2">
-                        Voir mes projets
+                <div class="module-title">
+
+                    <h3>Préparer un projet Web</h3>
+
+                    <p>
+                        Analyse, conception, organisation et préparation
+                        d'un projet Web avant son développement.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="cards">
+
+                <!-- COURS -->
+
+                <div class="card">
+
+                    <div class="card-icon">
+                        📚
+                    </div>
+
+                    <h4>Cours</h4>
+
+                    <p>
+                        Supports de cours et notions essentielles
+                        pour préparer et analyser un projet Web.
+                    </p>
+
+                    <a href="pdf/cours-preparer-projet-web.pdf"
+                       class="btn btn-primary"
+                       download>
+                        Télécharger le cours
                     </a>
 
-                    <a href="#contact" class="btn btn-outline-dark btn-lg">
-                        Me contacter
+                </div>
+
+
+                <!-- TP -->
+
+                <div class="card">
+
+                    <div class="card-icon">
+                        🛠️
+                    </div>
+
+                    <h4>Travaux pratiques</h4>
+
+                    <p>
+                        Exercices et travaux pratiques permettant
+                        d'appliquer progressivement les notions du module.
+                    </p>
+
+                    <a href="#tp"
+                       class="btn btn-outline">
+                        Voir les TP
+                    </a>
+
+                </div>
+
+
+                <!-- MINI PROJET -->
+
+                <div class="card">
+
+                    <div class="card-icon">
+                        🚀
+                    </div>
+
+                    <h4>Mini-projet</h4>
+
+                    <p>
+                        Mise en pratique des connaissances à travers
+                        un projet Web réalisé progressivement.
+                    </p>
+
+                    <a href="#projets"
+                       class="btn btn-outline">
+                        Voir le projet
                     </a>
 
                 </div>
 
             </div>
 
-            <div class="col-md-5 text-center mt-5 mt-md-0">
-
-                <img
-                    src="/images/photo.png"
-                    alt="Photo de profil"
-                    class="img-fluid"
-                >
-
-            </div>
-
         </div>
 
     </div>
@@ -172,304 +498,80 @@
 </section>
 
 
-<!-- ================= À PROPOS ================= -->
+<!-- ================= COURS ================= -->
 
-<section id="apropos" class="bg-light">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <h2 class="fw-bold">
-                À propos de moi
-            </h2>
-
-            <p class="text-muted">
-                Quelques informations sur mon parcours
-            </p>
-
-        </div>
-
-        <div class="row justify-content-center">
-
-            <div class="col-lg-9">
-
-                <p>
-                    Je suis développeur Full Stack spécialisé dans la conception
-                    et le développement d'applications web.
-                </p>
-
-                <p>
-                    J'interviens sur différentes étapes d'un projet :
-                    analyse des besoins, conception, développement,
-                    intégration, tests et mise en production.
-                </p>
-
-                <p>
-                    J'aime particulièrement travailler sur des projets
-                    permettant de transformer une idée en une application
-                    fonctionnelle et accessible.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= COMPÉTENCES ================= -->
-
-<section id="competences">
+<section id="cours">
 
     <div class="container">
 
-        <div class="text-center mb-5">
+        <div class="section-title">
 
-            <h2 class="fw-bold">
-                Mes compétences
-            </h2>
+            <h2>📚 Cours</h2>
 
-        </div>
-
-        <div class="row g-4">
-
-            <div class="col-md-4">
-
-                <div class="card h-100 shadow-sm">
-
-                    <div class="card-body text-center">
-
-                        <i class="bi bi-code-slash display-4 text-primary"></i>
-
-                        <h4 class="mt-3">
-                            Front-End
-                        </h4>
-
-                        <p>
-                            HTML5, CSS3, JavaScript, Bootstrap,
-                            responsive design...
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="card h-100 shadow-sm">
-
-                    <div class="card-body text-center">
-
-                        <i class="bi bi-server display-4 text-primary"></i>
-
-                        <h4 class="mt-3">
-                            Back-End
-                        </h4>
-
-                        <p>
-                            PHP, bases de données, APIs,
-                            architecture serveur...
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="card h-100 shadow-sm">
-
-                    <div class="card-body text-center">
-
-                        <i class="bi bi-git display-4 text-primary"></i>
-
-                        <h4 class="mt-3">
-                            Outils & Déploiement
-                        </h4>
-
-                        <p>
-                            Git, GitHub, Vercel,
-                            gestion de versions et déploiement.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROJETS ================= -->
-
-<section id="projets" class="bg-light">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <h2 class="fw-bold">
-                Mes projets
-            </h2>
-
-            <p class="text-muted">
-                Une sélection de mes réalisations
+            <p>
+                Supports pédagogiques du module
+                « Préparer un projet Web ».
             </p>
 
         </div>
 
 
-        <div class="row g-4">
+        <div class="resource-list">
 
+            <div class="resource">
 
-            <!-- Projet 1 -->
+                <div class="resource-info">
 
-            <div class="col-md-4">
-
-                <div class="card project-card h-100 shadow-sm">
-
-                    <img
-                        src="/images/photo.png"
-                        class="card-img-top"
-                        alt="Projet 1"
-                    >
-
-                    <div class="card-body">
-
-                        <h4 class="card-title">
-                            Projet 1
-                        </h4>
-
-                        <p class="card-text">
-                            Description courte du projet,
-                            ses objectifs et les fonctionnalités principales.
-                        </p>
-
-                        <span class="badge bg-primary">
-                            PHP
-                        </span>
-
-                        <span class="badge bg-secondary">
-                            Bootstrap
-                        </span>
-
+                    <div class="pdf-icon">
+                        PDF
                     </div>
 
-                    <div class="card-footer bg-white">
+                    <div>
+                        <strong>
+                            Cours — Préparer un projet Web
+                        </strong>
 
-                        <a href="#" class="btn btn-outline-primary">
-                            Voir le projet
-                        </a>
-
+                        <small>
+                            Support principal du module
+                        </small>
                     </div>
 
                 </div>
+
+                <a href="pdf/cours-preparer-projet-web.pdf"
+                   class="btn btn-primary"
+                   download>
+                    Télécharger
+                </a>
 
             </div>
 
 
-            <!-- Projet 2 -->
+            <div class="resource">
 
-            <div class="col-md-4">
+                <div class="resource-info">
 
-                <div class="card project-card h-100 shadow-sm">
-
-                    <img
-                        src="/images/photo.png"
-                        class="card-img-top"
-                        alt="Projet 2"
-                    >
-
-                    <div class="card-body">
-
-                        <h4 class="card-title">
-                            Projet 2
-                        </h4>
-
-                        <p class="card-text">
-                            Description courte du projet,
-                            ses objectifs et les fonctionnalités principales.
-                        </p>
-
-                        <span class="badge bg-primary">
-                            JavaScript
-                        </span>
-
-                        <span class="badge bg-secondary">
-                            API
-                        </span>
-
+                    <div class="pdf-icon">
+                        PDF
                     </div>
 
-                    <div class="card-footer bg-white">
+                    <div>
+                        <strong>
+                            UML — Introduction
+                        </strong>
 
-                        <a href="#" class="btn btn-outline-primary">
-                            Voir le projet
-                        </a>
-
+                        <small>
+                            Modélisation et conception
+                        </small>
                     </div>
 
                 </div>
 
-            </div>
-
-
-            <!-- Projet 3 -->
-
-            <div class="col-md-4">
-
-                <div class="card project-card h-100 shadow-sm">
-
-                    <img
-                        src="/images/photo.png"
-                        class="card-img-top"
-                        alt="Projet 3"
-                    >
-
-                    <div class="card-body">
-
-                        <h4 class="card-title">
-                            Projet 3
-                        </h4>
-
-                        <p class="card-text">
-                            Description courte du projet,
-                            ses objectifs et les fonctionnalités principales.
-                        </p>
-
-                        <span class="badge bg-primary">
-                            HTML
-                        </span>
-
-                        <span class="badge bg-secondary">
-                            CSS
-                        </span>
-
-                    </div>
-
-                    <div class="card-footer bg-white">
-
-                        <a href="#" class="btn btn-outline-primary">
-                            Voir le projet
-                        </a>
-
-                    </div>
-
-                </div>
+                <a href="pdf/cours-uml.pdf"
+                   class="btn btn-primary"
+                   download>
+                    Télécharger
+                </a>
 
             </div>
 
@@ -480,88 +582,141 @@
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- ================= TP ================= -->
 
-<section id="contact">
+<section id="tp">
 
     <div class="container">
 
-        <div class="text-center mb-5">
+        <div class="section-title">
 
-            <h2 class="fw-bold">
-                Contact
-            </h2>
+            <h2>🛠️ Travaux pratiques</h2>
 
-            <p class="text-muted">
-                N'hésitez pas à me contacter
+            <p>
+                Réalisez les TP dans l'ordre proposé.
             </p>
 
         </div>
 
-        <div class="row justify-content-center">
 
-            <div class="col-md-7">
+        <div class="resource-list">
 
-                <form method="POST" action="contact.php">
+            <div class="resource">
 
-                    <div class="mb-3">
+                <div class="resource-info">
 
-                        <label for="nom" class="form-label">
-                            Nom
-                        </label>
-
-                        <input
-                            type="text"
-                            id="nom"
-                            name="nom"
-                            class="form-control"
-                            required
-                        >
-
+                    <div class="pdf-icon">
+                        TP
                     </div>
 
+                    <div>
+                        <strong>
+                            TP 01 — Analyse d'un projet Web
+                        </strong>
 
-                    <div class="mb-3">
-
-                        <label for="email" class="form-label">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            class="form-control"
-                            required
-                        >
-
+                        <small>
+                            Identification des besoins et fonctionnalités
+                        </small>
                     </div>
 
+                </div>
 
-                    <div class="mb-3">
-
-                        <label for="message" class="form-label">
-                            Message
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            class="form-control"
-                            rows="5"
-                            required
-                        ></textarea>
-
-                    </div>
-
-
-                    <button type="submit" class="btn btn-primary">
-                        Envoyer
-                    </button>
-
-                </form>
+                <a href="pdf/tp-01-analyse.pdf"
+                   class="btn btn-primary"
+                   download>
+                    Énoncé PDF
+                </a>
 
             </div>
+
+
+            <div class="resource">
+
+                <div class="resource-info">
+
+                    <div class="pdf-icon">
+                        TP
+                    </div>
+
+                    <div>
+                        <strong>
+                            TP 02 — Modélisation UML
+                        </strong>
+
+                        <small>
+                            Cas d'utilisation, classes et scénarios
+                        </small>
+                    </div>
+
+                </div>
+
+                <a href="pdf/tp-02-uml.pdf"
+                   class="btn btn-primary"
+                   download>
+                    Énoncé PDF
+                </a>
+
+            </div>
+
+
+            <div class="resource">
+
+                <div class="resource-info">
+
+                    <div class="pdf-icon">
+                        TP
+                    </div>
+
+                    <div>
+                        <strong>
+                            TP 03 — Diagrammes UML
+                        </strong>
+
+                        <small>
+                            Séquence, activité et état-transition
+                        </small>
+                    </div>
+
+                </div>
+
+                <a href="pdf/tp-03-diagrammes-uml.pdf"
+                   class="btn btn-primary"
+                   download>
+                    Énoncé PDF
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MINI PROJET ================= -->
+
+<section id="projets">
+
+    <div class="container">
+
+        <div class="project">
+
+            <h3>
+                🚀 Mini-projet — Application Web
+            </h3>
+
+            <p>
+                Réaliser une application Web en appliquant les différentes
+                étapes étudiées dans le module : analyse du besoin,
+                conception, modélisation UML et préparation du projet.
+            </p>
+
+            <a href="pdf/mini-projet.pdf"
+               class="btn btn-primary"
+               download>
+                Télécharger l'énoncé PDF
+            </a>
 
         </div>
 
@@ -572,40 +727,17 @@
 
 <!-- ================= FOOTER ================= -->
 
-<footer class="bg-dark text-white text-center">
+<footer>
 
-    <div class="container">
+    <p>
+        Formation Développement Web FullStack — 2ème année
+    </p>
 
-        <p class="mb-2">
-            © <?php echo date("Y"); ?> Votre Nom
-        </p>
-
-        <div>
-
-            <a href="#" class="text-white me-3">
-                <i class="bi bi-github"></i>
-            </a>
-
-            <a href="#" class="text-white me-3">
-                <i class="bi bi-linkedin"></i>
-            </a>
-
-            <a href="#" class="text-white">
-                <i class="bi bi-envelope"></i>
-            </a>
-
-        </div>
-
-    </div>
+    <p>
+        Espace pédagogique stagiaires
+    </p>
 
 </footer>
-
-
-<!-- Bootstrap JS -->
-
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
 
 </body>
 </html>
