@@ -705,7 +705,7 @@
                         </strong>
 
                         <small>
-                            _Prototypage et animations_ 
+                            Prototypage et animations
                         </small>
                     </div>
 
