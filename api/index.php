@@ -573,6 +573,28 @@
                     Télécharger
                 </a>
 
+                 <div class="resource-info">
+
+                    <div class="pdf-icon">
+                        PDF
+                    </div>
+
+                    <div>
+                        <strong>
+                           Exercices UML
+                        </strong>
+
+                        <small>
+                            Modélisation et conception
+                        </small>
+                    </div>
+
+                </div>
+<a href="/docs/UMLTPs.pdf"
+                   class="btn btn-primary"
+                   download>
+                    Télécharger
+                </a>
             </div>
 
         </div>
