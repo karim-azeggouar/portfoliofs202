@@ -646,7 +646,7 @@
 
                     <div>
                         <strong>
-                            Figma_Partie 1_
+                            Figma_Partie 1
                         </strong>
 
                         <small>
@@ -669,7 +669,7 @@
 
                     <div>
                         <strong>
-                            Figma_Partie 2_
+                            Figma_Partie 2
                         </strong>
 
                         <small>
