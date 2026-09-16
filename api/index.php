@@ -636,6 +636,39 @@
 
         <div class="resource-list">
 
+
+
+<div class="resource">
+
+                <div class="resource-info">
+
+                    <div class="pdf-icon">
+                        PPT
+                    </div>
+
+                    <div>
+                        <strong>
+                            Présentation FIGMA
+                        </strong>
+
+                        
+                    </div>
+
+                </div>
+
+              <a href="/docs/Figma.pptx"
+                   class="btn btn-primary"
+                   download>
+                    Télécharger
+                </a>  
+
+            </div>
+
+
+
+
+
+
             <div class="resource">
 
                 <div class="resource-info">
