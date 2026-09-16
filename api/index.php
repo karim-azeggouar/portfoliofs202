@@ -656,11 +656,7 @@
 
                 </div>
 
-                <a href="/docs/figma/Figma_Partie1_Outils-de-base.rar"
-                   class="btn btn-primary"
-                   download>
-                    Télécharger
-                </a>
+                
 
             </div>
  <div class="resource">
@@ -677,17 +673,12 @@
                         </strong>
 
                         <small>
-                            Outils avancés.rar 
+                            Outils avancés 
                         </small>
                     </div>
 
                 </div>
 
-                <a href="/docs/figma/Figma_Partie 2_Outils avancés.rar"
-                   class="btn btn-primary"
-                   download>
-                    Télécharger
-                </a>
 
             </div>
 
@@ -711,11 +702,7 @@
 
                 </div>
 
-                <a href="/docs/figma/Figma_Partie 3_Prototypage et animations.rar"
-                   class="btn btn-primary"
-                   download>
-                    Télécharger
-                </a>
+               
 
             </div>
 
