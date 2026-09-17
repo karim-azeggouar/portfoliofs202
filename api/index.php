@@ -766,10 +766,10 @@
 
         <div class="section-title">
 
-            <h2>CrÃ©er un badge portfolio</h2>
+            <h2>Cr&eacute;er un badge portfolio</h2>
 
             <p>
-                CrÃ©ez un badge personnalisÃ© pour votre portfolio avec l'application React.
+                Cr&eacute;ez un badge personnalis&eacute; pour votre portfolio avec l'application React.
             </p>
 
         </div>
@@ -786,11 +786,11 @@
 
                     <div>
                         <strong>
-                            GÃ©nÃ©rateur de badge portfolio
+                            G&eacute;n&eacute;rateur de badge portfolio
                         </strong>
 
                         <small>
-                            Ouvrez l'application pour crÃ©er votre badge.
+                            Ouvrez l'application pour cr&eacute;er votre badge.
                         </small>
                     </div>
 
@@ -800,7 +800,7 @@
                    class="btn btn-primary"
                    target="_blank"
                    rel="noopener noreferrer">
-                    CrÃ©er un badge
+                    Cr&eacute;er un badge
                 </a>
 
             </div>
