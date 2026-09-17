@@ -351,6 +351,7 @@
         <a href="#cours">Cours</a>
         <a href="#tp">TP</a>
         <a href="#projets">Mini-projets</a>
+        <a href="#badge-portfolio">Badge portfolio</a>
     </nav>
 
 </header>
@@ -756,6 +757,59 @@
 
 
 <!-- ================= TP ================= -->
+
+<!-- ================= BADGE PORTFOLIO ================= -->
+
+<section id="badge-portfolio">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>CrÃ©er un badge portfolio</h2>
+
+            <p>
+                CrÃ©ez un badge personnalisÃ© pour votre portfolio avec l'application React.
+            </p>
+
+        </div>
+
+        <div class="resource-list">
+
+            <div class="resource">
+
+                <div class="resource-info">
+
+                    <div class="pdf-icon">
+                        APP
+                    </div>
+
+                    <div>
+                        <strong>
+                            GÃ©nÃ©rateur de badge portfolio
+                        </strong>
+
+                        <small>
+                            Ouvrez l'application pour crÃ©er votre badge.
+                        </small>
+                    </div>
+
+                </div>
+
+                <a href="https://badge-ashen-two.vercel.app/"
+                   class="btn btn-primary"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    CrÃ©er un badge
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <section id="tp">
 
