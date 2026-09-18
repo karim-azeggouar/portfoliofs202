@@ -54,6 +54,25 @@
             color: white;
         }
 
+        .menu-toggle {
+            display: none;
+            border: 1px solid #475569;
+            border-radius: 8px;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            font: inherit;
+            font-size: 14px;
+            padding: 9px 12px;
+        }
+
+        .menu-toggle:hover,
+        .menu-toggle:focus-visible {
+            background: #1e293b;
+            outline: 2px solid #38bdf8;
+            outline-offset: 2px;
+        }
+
         /* ================= HERO ================= */
 
         .hero {
@@ -310,6 +329,19 @@
 
         @media(max-width: 850px) {
 
+            header {
+                padding: 14px 7%;
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
             .cards {
                 grid-template-columns: 1fr;
             }
@@ -320,6 +352,26 @@
 
             nav {
                 display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: stretch;
+                padding-top: 12px;
+                gap: 4px;
+            }
+
+            nav.is-open {
+                display: flex;
+            }
+
+            nav a {
+                margin-left: 0;
+                padding: 12px;
+                border-radius: 8px;
+            }
+
+            nav a:hover,
+            nav a:focus-visible {
+                background: #1e293b;
             }
 
             .module-header {
@@ -346,7 +398,11 @@
         Full<span>Stack</span> Academy
     </div>
 
-    <nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+        Menu
+    </button>
+
+    <nav id="main-navigation">
         <a href="#modules">Modules</a>
         <a href="#cours">Cours</a>
         <a href="#tp">TP</a>
@@ -914,6 +970,27 @@
     </p>
 
 </footer>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('#main-navigation');
+
+    menuToggle.addEventListener('click', () => {
+        const isOpen = navigation.classList.toggle('is-open');
+        menuToggle.setAttribute('aria-expanded', isOpen);
+        menuToggle.textContent = isOpen ? 'Fermer' : 'Menu';
+    });
+
+    navigation.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 850) {
+                navigation.classList.remove('is-open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.textContent = 'Menu';
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
