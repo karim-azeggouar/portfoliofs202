@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formation FullStack — 2ème année</title>
+    <title>Formation FullStack — 2ème année —</title>
     <style>
         :root { --navy:#0f172a; --blue:#2563eb; --sky:#dbeafe; --slate:#64748b; --line:#e2e8f0; --page:#f5f7fb; }
         * { box-sizing:border-box; margin:0; padding:0; } html { scroll-behavior:smooth; }
