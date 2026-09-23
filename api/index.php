@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-<header><div class="logo">Full<span>Stack</span> Academy</div><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button><nav id="main-navigation"><a href="#modules">Modules</a><a href="#m01">M01 : Projet Web</a><a href="#m02">M02 : Gestion de projets</a><a href="#portfolio-en-ligne">Créer un portfolio</a><a href="#badge-portfolio">Badge portfolio</a></nav></header>
+<header><div class="logo">Full<span>Stack</span> Academy</div><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button><nav id="main-navigation"><a href="#modules">Modules</a><a href="#m01">M01 : Projet Web</a><a href="#m02">M02 : Gestion de projets</a><a href="#portfolio-en-ligne">Portfolio en ligne</a><a href="#badge-portfolio">Badge portfolio</a></nav></header>
 <section class="hero"><div class="hero-content"><div class="badge">Formation Développement Web FullStack</div><h1>2ème année <span>FullStack</span></h1><p>Un espace pédagogique organisé par modules. Chaque module regroupe ses cours, travaux pratiques, exercices et projets.</p></div></section>
 <main class="container"><section id="modules"><div class="section-title"><h2>Parcours de formation</h2><p>Choisissez un module pour accéder à l'ensemble de ses ressources.</p></div>
 <article class="module" id="m01"><div class="module-header"><div class="module-number">M01</div><div class="module-title"><h3>Préparer un projet Web</h3><p>Analyse, conception, organisation et préparation d'un projet Web avant son développement.</p></div></div>
