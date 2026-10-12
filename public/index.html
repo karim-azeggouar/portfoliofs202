@@ -15,7 +15,7 @@
         .badge { display:inline-block; margin-bottom:20px; padding:8px 15px; border:1px solid rgba(255,255,255,.2); border-radius:20px; background:rgba(255,255,255,.12); font-size:13px; }
         h1 { margin-bottom:18px; font-size:45px; } h1 span { color:#38bdf8; }.hero p { max-width:750px; color:#dbeafe; font-size:18px; line-height:1.7; }
         .container { width:86%; max-width:1200px; margin:auto; } section { padding:45px 0; }.section-title { margin-bottom:22px; }.section-title h2 { margin-bottom:8px; font-size:28px; }.section-title p,.module-title p,small { color:var(--slate); }
-        .module { margin-bottom:32px; padding:30px; border:1px solid var(--line); border-radius:16px; background:#fff; box-shadow:0 5px 20px rgba(15,23,42,.07); scroll-margin-top:85px; }.module-header { display:flex; align-items:center; gap:20px; margin-bottom:28px; }.module-number { display:grid; flex:0 0 55px; width:55px; height:55px; place-items:center; border-radius:14px; background:var(--sky); color:#1d4ed8; font-size:17px; font-weight:700; }.module-title h3 { margin-bottom:5px; font-size:24px; }
+        .module { margin-bottom:32px; padding:30px; border:1px solid var(--line); border-radius:16px; background:#fff; box-shadow:0 5px 20px rgba(15,23,42,.07); scroll-margin-top:85px; }.module-header { display:flex; align-items:center; gap:20px; margin-bottom:28px; }.module > .module-header { margin-bottom:0; list-style:none; cursor:pointer; }.module > .module-header::-webkit-details-marker { display:none; }.module > .module-header::after { width:10px; height:10px; margin-left:auto; border-right:2px solid var(--slate); border-bottom:2px solid var(--slate); content:""; flex:0 0 10px; transform:rotate(45deg); transition:transform .2s ease; }.module[open] > .module-header { margin-bottom:28px; }.module[open] > .module-header::after { transform:rotate(225deg); }.module > .module-header:focus-visible { outline:3px solid var(--blue); outline-offset:5px; border-radius:4px; }.module-number { display:grid; flex:0 0 55px; width:55px; height:55px; place-items:center; border-radius:14px; background:var(--sky); color:#1d4ed8; font-size:17px; font-weight:700; }.module-title h3 { margin-bottom:5px; font-size:24px; }
         .module-content { padding-top:4px; }.content-heading { margin:26px 0 12px; font-size:19px; }.content-heading:first-child { margin-top:0; }
         .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }.card { display:flex; flex-direction:column; padding:22px; border:1px solid var(--line); border-radius:14px; background:#fff; }.card:hover { transform:translateY(-3px); box-shadow:0 10px 25px rgba(15,23,42,.09); transition:.2s; }.card-icon { margin-bottom:12px; font-size:26px; }.card h4 { margin-bottom:9px; font-size:18px; }.card p { flex:1; margin-bottom:16px; color:var(--slate); font-size:14px; line-height:1.55; }
         .resource-list { display:flex; flex-direction:column; gap:10px; }.resource { display:flex; align-items:center; justify-content:space-between; gap:15px; padding:13px 16px; border:1px solid var(--line); border-radius:10px; background:#fff; }.resource-info { display:flex; align-items:center; gap:13px; }.file-icon { display:grid; flex:0 0 40px; width:40px; height:40px; place-items:center; border-radius:8px; background:#fee2e2; color:#dc2626; font-size:11px; font-weight:bold; }.resource strong { display:block; margin-bottom:3px; }
@@ -52,14 +52,14 @@
             <p>Choisissez un module pour accéder à l'ensemble de ses ressources.</p>
         </div>
 
-        <article class="module" id="m01">
-            <div class="module-header">
+        <details class="module" id="m01">
+            <summary class="module-header">
                 <div class="module-number">M01</div>
                 <div class="module-title">
                     <h3>Préparer un projet Web</h3>
                     <p>Analyse, conception, organisation et préparation d'un projet Web avant son développement.</p>
                 </div>
-            </div>
+            </summary>
 
             <div class="module-content" id="m01-cours">
                 <h4 class="content-heading">Cours — UML</h4>
@@ -162,16 +162,16 @@
                     <a href="/docs/quickannonces.pdf" class="btn btn-primary" download>Télécharger l'énoncé PDF</a>
                 </div>
             </div>
-        </article>
+        </details>
 
-        <article class="module" id="m02">
-            <div class="module-header">
+        <details class="module" id="m02">
+            <summary class="module-header">
                 <div class="module-number">M02</div>
                 <div class="module-title">
                     <h3>Gestion de projets</h3>
                     <p>Découvrir et mettre en œuvre les principales approches d'organisation et de pilotage d'un projet.</p>
                 </div>
-            </div>
+            </summary>
 
             <div class="subtopics">
                 <section class="topic">
@@ -265,7 +265,7 @@
                     <a href="https://www.youtube.com/watch?v=Aap56g77i_0&amp;t=16s" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Voir la vidéo</a>
                 </div>
             </div>
-        </article>
+        </details>
     </section>
 
     <section id="portfolio-en-ligne">
